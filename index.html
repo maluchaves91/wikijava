@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WikiJava</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Piedra&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <span> <img src="logo.png" width="100%" /></span>
+        </div>
+        <span>
+
+        </span>
+    </header>
+
+    <div class="bar"></div>
+
+    <div class="content">
+        <sidebar>
+            <ul class="menu">
+                <li><a href="#historia">História</a></li>
+                <li><a href="#usos">Utilizações </a></li>
+                <li><a href="#caracteristicas">Caracteristicas</a></li>
+                <li><a href="#classe">Classe no JAVA</a></li>
+                <li><a href="#sintaxes">Principais Sintaxes</a></li>
+            </ul>
+        </sidebar>
+
+        <main>
+            <section id="historia">
+                <h2 class="titulos">História</h2>
+                <p class="conteudo">A linguagem de programação Java foi criada por James Gosling, Mike Sheridan e
+                    Patrick Naughton na década de 1990 enquanto trabalhavam na Sun Microsystems (posteriormente
+                    adquirida pela Oracle Corporation). A ideia original era desenvolver uma linguagem de programação
+                    para dispositivos eletrônicos domésticos, especialmente para aparelhos de TV interativos. No
+                    entanto, esse projeto acabou não se concretizando, e a equipe teve que buscar outras oportunidades
+                    para sua nova linguagem. </p>
+
+                <p class="conteudo">Em 1991, com a crescente popularidade da internet, a equipe de desenvolvimento da
+                    Sun percebeu a necessidade de uma linguagem de programação que pudesse ser usada para criar
+                    aplicativos interativos para a web. Com base na linguagem de programação C++, eles começaram a
+                    adaptar e melhorar sua linguagem para atender a essa demanda.</p>
+
+                <p class="conteudo">A equipe liderada por James Gosling trabalhou para tornar a linguagem mais simples,
+                    segura e portável, tornando-a ideal para uso na web e para diferentes plataformas. Em 1995, a Sun
+                    Microsystems lançou oficialmente o Java Development Kit (JDK) 1.0, que incluía a linguagem Java, a
+                    máquina virtual Java (Java Virtual Machine - JVM) e uma série de bibliotecas essenciais para o
+                    desenvolvimento de aplicativos Java.</p>
+
+                <p class="conteudo">Uma das principais características que impulsionaram a popularidade do Java foi a
+                    "portabilidade", que permitia que os programas escritos em Java fossem executados em qualquer
+                    sistema operacional que tivesse uma JVM instalada, tornando a linguagem ideal para ambientes
+                    distribuídos e para a internet.</p>
+
+                <p class="conteudo">Além disso, o Java se tornou amplamente conhecido por sua abordagem de "Write Once,
+                    Run Anywhere" (Escreva uma vez, execute em qualquer lugar), que permitia aos desenvolvedores
+                    escreverem seus programas em uma plataforma e, em seguida, executá-los em qualquer outra plataforma
+                    sem a necessidade de modificação do código-fonte.</p>
+
+                <p class="conteudo">O Java ganhou rápida adoção na comunidade de desenvolvedores e se tornou uma das
+                    linguagens mais populares e amplamente utilizadas no mundo da computação. Sua versatilidade,
+                    portabilidade, segurança e a ampla gama de bibliotecas e frameworks disponíveis contribuíram para o
+                    seu sucesso contínuo até os dias de hoje.</p>
+
+            </section>
+            <section id="usos">
+                <h2 class="titulos">Utilizações</h2>
+                <h3 class="subtitulo"><strong>Dispositivos Móveis</strong></h3>
+                <p class="conteudo">O Android, sistema operacional móvel desenvolvido pelo Google, utiliza Java como uma
+                    de suas principais linguagens de programação. Muitos aplicativos Android são desenvolvidos usando a
+                    plataforma Android Studio e a linguagem Java.</p>
+
+                <h3 class="subtitulo"><strong>Aplicativos de Desktop</strong></h3>
+                <p class="conteudo">O Java é amplamente utilizado para criar aplicativos de desktop multiplataforma.
+                    Empresas e desenvolvedores podem criar aplicativos que funcionam em diferentes sistemas
+                    operacionais, como Windows, macOS e Linux, usando a JVM (Java Virtual Machine).</p>
+
+                <h3 class="subtitulo"><strong>Aplicativos de DesktopAplicativos Web</strong></h3>
+                <p class="conteudo">O Java é utilizado para desenvolver aplicativos web, incluindo aplicações
+                    empresariais e sistemas de gerenciamento de conteúdo. Frameworks como o JavaServer Faces (JSF),
+                    Spring e Struts são comuns para o desenvolvimento web em Java.</p>
+
+                <h3 class="subtitulo"><strong>Jogos para Desktop e Web</strong></h3>
+                <p class="conteudo">O Java é usado no desenvolvimento de jogos para desktop e jogos web. Com o JavaFX,
+                    um conjunto de bibliotecas gráficas, os desenvolvedores podem criar jogos com interfaces gráficas
+                    interativas.</p>
+
+                <h3 class="subtitulo"><strong>Sistemas Embarcados e IoT (Internet das Coisas)</strong></h3>
+                <p class="conteudo">O Java é usado em sistemas embarcados e dispositivos de IoT devido à sua
+                    portabilidade e capacidade de gerenciar recursos em dispositivos com recursos limitados.</p>
+
+                <h3 class="subtitulo"><strong>Sistemas de Gerenciamento de Banco de Dados</strong></h3>
+                <p class="conteudo">Muitos sistemas de gerenciamento de banco de dados (DBMS) e tecnologias relacionadas
+                    são desenvolvidos em Java, como o Apache Cassandra e o Apache Derby.</p>
+
+                <h3 class="subtitulo"><strong>Servidores de Aplicativos e Servidores Web</strong></h3>
+                <p class="conteudo">O Java é amplamente utilizado na criação de servidores de aplicativos e servidores
+                    web devido à sua escalabilidade e eficiência no gerenciamento de solicitações.</p>
+
+                <h3 class="subtitulo"><strong>Aplicações Empresariais</strong></h3>
+                <p class="conteudo">Muitas empresas usam Java para desenvolver aplicações de negócios, como sistemas de
+                    gestão de recursos humanos, contabilidade, ERP (Planejamento de Recursos Empresariais) e CRM (Gestão
+                    de Relacionamento com o Cliente).</p>
+
+                <h3 class="subtitulo"><strong>Sistemas de Gerenciamento de Conteúdo</strong></h3>
+                <p class="conteudo">Muitos sistemas de gerenciamento de conteúdo (CMS) são desenvolvidos em Java,
+                    permitindo que empresas e indivíduos gerenciem facilmente o conteúdo de seus sites.</p>
+
+            </section>
+            <section id="caracteristicas">
+                <h2 class="titulos">Principais Características do JAVA</h2>
+                A linguagem de programação Java possui várias características que a tornam popular e
+                amplamente utilizada na indústria de desenvolvimento de software. Algumas das principais
+                características do Java são:</p>
+                <ol>
+                    <li><strong>Portabilidade</strong>
+                        <ul>
+                            <li>Os programas escritos em Java podem ser executados em qualquer plataforma que tenha uma
+                                máquina virtual Java (JVM) instalada.
+                            </li>
+                        </ul>
+                    </li>
+                    <li><strong>Orientação a Objetos</strong>
+                        <ul>
+                            <li>Java é uma linguagem de programação orientada a objetos, o que significa que
+                                ela suporta os conceitos de encapsulamento, herança, polimorfismo e abstração. Isso
+                                torna a
+                                linguagem mais modular, extensível e fácil de manter.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Independência de Arquitetura</strong>
+                        <ul>
+                            <li>
+                                Projetado para ser independente de arquitetura, o que
+                                significa que o código Java pode ser executado em diferentes tipos de processadores sem
+                                a
+                                necessidade de recompilação.
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><strong>Segurança</strong>
+                        <ul>
+                            <li>
+                                A JVM isola o código Java em um
+                                ambiente controlado, garantindo que os aplicativos não possam acessar recursos do
+                                sistema sem
+                                permissão.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Gerenciamento Automático de Memória</strong>
+                        <ul>
+                            <li>
+                                O Java possui um sistema de gerenciamento automático de memória
+                                conhecido como coletor de lixo (garbage collector). Ele libera automaticamente a memória
+                                ocupada por
+                                objetos não utilizados, facilitando o desenvolvimento e evitando problemas comuns de
+                                vazamento de
+                                memória.
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <strong>Bibliotecas</strong>
+                        <ul>
+                            <li>
+                                Tem uma ampla variedade de bibliotecas padrão que fornecem
+                                funcionalidades para tarefas comuns, como manipulação de strings, entrada/saída, rede,
+                                gráficos e
+                                muito mais. Essas bibliotecas facilitam o desenvolvimento e aceleram o processo de
+                                criação de
+                                aplicativos.
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <strong>Multithreading</strong>
+                        <ul>
+                            <li>Permite que os desenvolvedores criem
+                                aplicativos que executem várias tarefas simultaneamente. Isso é especialmente útil para
+                                aplicativos
+                                que precisam lidar com tarefas concorrentes, como aplicativos da web e jogos.</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <strong>Plataforma para Web</strong>
+                        <ul>
+                            <li>
+                                Suporte robusto para desenvolvimento de aplicativos web por meio
+                                de tecnologias como Servlets, JavaServer Pages (JSP), JavaServer Faces (JSF) e
+                                frameworks como
+                                Spring e Struts.
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <strong>Comunidade e Ecossistema</strong>
+                        <ul>
+                            <li>
+                                Java possui uma grande comunidade de desenvolvedores ativos e uma vasta
+                                quantidade de bibliotecas, frameworks e ferramentas disponíveis, o que facilita o
+                                desenvolvimento de
+                                uma ampla variedade de aplicativos.
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+            </section>
+
+            <section id="classe">
+                <h2 class="titulos">Classes</h2>
+                <p class="conteudo"> Em programação orientada a objetos, uma classe é uma estrutura fundamental que
+                    define um tipo de objeto. Ela funciona como um molde ou modelo para criar objetos, fornecendo uma
+                    descrição das características e comportamentos que os objetos desse tipo terão. Uma classe encapsula
+                    os atributos (variáveis) e métodos (funções) relacionados a um conceito específico, permitindo a
+                    criação de múltiplas instâncias (objetos) com base nessa definição.</p>
+
+                <p class="conteudo">As classes são a base da programação orientada a objetos e ajudam a organizar e
+                    estruturar o código de maneira mais eficiente e legível. Elas permitem a criação de abstrações,
+                    tornando o código mais modular e facilitando a manutenção e reutilização do mesmo.</p>
+
+                <p class="conteudo">Por exemplo, vamos supor que estamos desenvolvendo um software para uma loja de
+                    livros online. Podemos criar uma classe chamada "Livro" para representar os livros em nosso sistema.
+                    Essa classe pode ter atributos como título, autor, ISBN, editora, preço, etc., e métodos para exibir
+                    informações do livro, calcular descontos, adicionar à lista de desejos, entre outros.</p>
+                <p></p>
+            </section>
+
+            <section id="sintaxes">
+                <h2 class="titulos">Principais Sintaxes</h2>
+                <p></p>
+
+                <h3>Declaração de Variáveis</h3>
+
+                <ol>
+                    <li>int: Representa números inteiros.
+                        <pre>
+                            <code>
+                                int numeroInteiro = 10;
+                            </code>
+                        </pre>
+                    </li>
+                    <li>double: Representa números de ponto flutuante (com precisão dupla).
+                        <pre>
+                            <code>
+                                double numeroDecimal = 10.5;
+                            </code>
+                        </pre>
+                    </li>
+                    <li>float: Representa números de ponto flutuante (com precisão simples).
+                        <pre>
+                            <code>
+                                float numeroDecimalSimples = 10.5f;
+                            </code>
+                        </pre>
+                    </li>
+                    <li>char: Representa um único caractere.
+                        <pre>
+                            <code>
+                                char caractere = 'A';
+                            </code>
+                        </pre>
+                    </li>
+                    <li>boolean: Representa valores booleanos (verdadeiro ou falso).
+                        <pre>
+                            <code>
+                                boolean condicao = true;
+                            </code>
+                        </pre>
+                    </li>
+                    <li>byte: Representa números inteiros pequenos.
+                        <pre>
+                            <code>
+                                byte pequenoNumero = 5;
+                            </code>
+                        </pre>
+                    </li>
+                    <li>short: Representa números inteiros curtos.
+                        <pre>
+                            <code>
+                                short numeroCurto = 1000;
+                            </code>
+                        </pre>
+                    </li>
+                    <li>long: Representa números inteiros longos.
+                        <pre>
+                            <code>
+                                long numeroLongo = 1000000000L;
+                            </code>
+                        </pre>
+                    </li>
+                    <li>String: Representa uma sequência de caracteres.
+                        <pre>
+                            <code>
+                                String texto = "Olá, Mundo!";
+                            </code>
+                        </pre>
+                    </li>
+                    <li>Arrays: Coleção de elementos do mesmo tipo.
+                        <pre>
+                            <code>
+                                int[] arrayDeInteiros = {1, 2, 3, 4, 5};
+
+                            </code>
+                        </pre>
+                    </li>
+                    <li>Classes e Objetos: Tipos de dados personalizados definidos pelo programador.
+                        <pre>
+                            <code>
+                                class Pessoa {
+                                    String nome;
+                                    int idade;
+                                }
+                                
+                                Pessoa pessoa1 = new Pessoa();
+                                pessoa1.nome = "João";
+                                pessoa1.idade = 25;
+                                
+                            </code>
+                        </pre>
+                    </li>
+                    <li>Enumerações (enum): Conjunto de constantes nomeadas
+                        <pre>
+                            <code>
+                                enum DiasDaSemana {
+                                    SEGUNDA, TERCA, QUARTA, QUINTA, SEXTA, SABADO, DOMINGO
+                                }
+                                
+                                DiasDaSemana dia = DiasDaSemana.SEGUNDA;
+                                
+                            </code>
+                        </pre>
+                    </li>
+                </ol>
+                <h3>Declaração de Variáveis</h3>
+                <ol>
+                    <li>
+                        if-else:
+                        <pre>
+                            <code>
+                                if (condicao) {
+                                    // Código a ser executado se a condição for verdadeira
+                                } else {
+                                    // Código a ser executado se a condição for falsa
+                                }                                
+                            </code>
+                        </pre>
+                    </li>
+                    <li>
+                        switch-case
+                        <pre>
+                            <code>
+                                switch (expressao) {
+                                    case valor1:
+                                        // Código para valor1
+                                        break;
+                                    case valor2:
+                                        // Código para valor2
+                                        break;
+                                    // ... outros casos ...
+                                    default:
+                                        // Código padrão
+                                }                                                    
+                            </code>
+                        </pre>
+                    </li>
+                    <li>
+                        loops (for, while, do-while):
+                        <pre>
+                            <code>
+                                for (inicialização; condição; atualização) {
+                                    // Corpo do loop
+                                }
+                                
+                                while (condição) {
+                                    // Corpo do loop
+                                }
+                                
+                                do {
+                                    // Corpo do loop
+                                } while (condição);                                                                           
+                            </code>
+                        </pre>
+                    </li>
+                </ol>
+                <h3>Tratamento de Exceções</h3>
+                <pre>
+                    <code>
+                        try {
+                            // Código que pode gerar uma exceção
+                        } catch (TipoDeExcecao e) {
+                            // Tratamento da exceção
+                        } finally {
+                            // Código a ser executado independentemente de exceções
+                        }
+                        
+                    </code>
+                </pre>
+                <h3>
+                    Classes e Objetos
+                </h3>
+                <pre>
+<code>
+    public class NomeDaClasse {
+        tipoDeDado nomeDoAtributo;
+                            
+        // Construtor
+         public NomeDaClasse(parâmetros) {
+            // Inicialização da classe
+    }
+                            
+        // Métodos da classe
+        tipoDeRetorno nomeDoMetodo(parâmetros) {
+            // Corpo do método
+        }
+    }                        
+                    </code>
+                </pre>
+
+                <h3>
+                    Herança e Polimorfismo
+                </h3>
+                <pre>
+                    <code>
+                        public class SubClasse extends SuperClasse {
+                            // Métodos e atributos da subclasse
+                        }                        
+                    </code>
+                </pre>
+                <h3>
+                    Interfaces
+                </h3>
+                <pre>
+                    <code>
+                        public interface NomeDaInterface {
+                            // Métodos da interface (sem implementação)
+                        }
+                        
+                    </code>
+                </pre>
+            </section>
+
+        </main>
+
+        <aside class="anchors">
+            <h2 class="titulos">Mais conteúdo</h2>
+
+            <iframe width="100%" src="https://www.youtube.com/embed/QoYkgEBl3zM" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <iframe width="100%" src="https://www.youtube.com/embed/NSXrDRxV-uU" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <iframe width="100%" src="https://www.youtube.com/embed/r5fVJfxdppA" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </ul>
+        </aside>
+    </div>
+    <footer>
+        <ol>
+            <li>W3Schools Online Web Tutorials. Java Tutorial. Disponível em:<a href="https://www.w3schools.com/java/default.asp"
+                    target="_blank"> https://www.w3schools.com/java/default.asp</a> Acesso em: 17 out. 2023.</li>
+            <li> WIKIPÉDIA. Java (linguagem de programação). Disponível em: <a
+                    href="https://pt.wikipedia.org/wiki/Java_(linguagem_de_programação)"
+                    target="_blank">https://pt.wikipedia.org/wiki/Java_(linguagem_de_programação)</a>. Acesso em: 17 out.
+                2023.</li>
+        </ol> 
+
+    </footer>
+
+
+
+</body>
+
+</html>
